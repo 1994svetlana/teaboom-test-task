@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ананасовый улун — ароматный китайский чай с яркими фруктовыми нотами.">
+  <title>Ананасовый улун — Teaboom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement"><span>✦</span> Маленький ритуал — большое удовольствие <span class="announcement-right">Подбор чая с заботой</span></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="Teaboom — главная"><span class="brand-symbol">t<span>✳</span></span><span class="brand-word">tea<span>boom</span></span></a>
+      <nav class="main-nav" id="mainNav" aria-label="Главная навигация">
+        <a href="#product">Каталог</a><a href="#story">О чае</a><a href="#brew">Как заваривать</a>
+      </nav>
+      <div class="header-tools"><button class="icon-button favorite-top" id="favoriteTop" aria-label="Добавить в избранное" aria-pressed="false">♡</button><a class="cart-link" href="#buy"><span class="cart-symbol">▢</span><span>Мой заказ</span><b id="cartCount">0</b></a></div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    </div>
+  </header>
+  <main>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="#">Главная</a><span>›</span><a href="#product">Улуны</a><span>›</span><span>Ананасовый улун</span></nav>
+    <section class="product-layout" id="product">
+      <div class="gallery">
+        <div class="main-visual">
+          <div class="visual-topline"><span class="tag tag-green">БЕСТСЕЛЛЕР</span><button class="icon-button favorite" id="favorite" aria-label="Добавить в избранное" aria-pressed="false">♡</button></div>
+          <div class="sun-disc"></div><div class="leaf leaf-a"></div><div class="leaf leaf-b"></div><div class="leaf leaf-c"></div>
+          <div class="tea-bowl"><div class="tea-bowl-rim"></div><div class="tea-liquid"></div><div class="tea-leaves leaves-one"></div><div class="tea-leaves leaves-two"></div><div class="fruit-fragment">🍍</div></div>
+          <div class="visual-note"><span class="note-star">✳</span><span>ТРОПИЧЕСКАЯ<br>СВЕЖЕСТЬ</span></div>
+          <div class="visual-bottom"><span>OOLONG COLLECTION</span><span>№ 01306</span></div>
+        </div>
+        <div class="gallery-caption"><span class="caption-icon">✦</span><span>Светлый улун с ароматом спелого ананаса</span><span class="caption-line"></span></div>
+        <div class="thumbnail-row"><button class="thumbnail selected" aria-label="Основной вид" aria-pressed="true"><span class="mini-bowl">◉</span></button><button class="thumbnail" aria-label="Вид чайных листьев" aria-pressed="false"><span>🍃</span></button><button class="thumbnail" aria-label="Вид ананаса" aria-pressed="false"><span>🍍</span></button><p>Натуральные ингредиенты<br><strong>Вкус, который запоминается</strong></p></div>
+      </div>
+
+      <div class="product-info">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> КИТАЙСКИЙ СВЕТЛЫЙ УЛУН</div>
+        <h1>Ананасовый<br><em>улун</em></h1>
+        <p class="intro">Мягкий чай с сочным ароматом ананаса — для солнечных моментов в любое время года.</p>
+        <div class="rating-row"><span class="stars" aria-label="5 из 5 звёзд">★★★★★</span><strong>4.9</strong><a href="#reviews">Отзывы покупателей</a></div>
+        <div class="product-divider"></div>
+        <div class="section-heading"><span>Выберите фасовку</span><small>Свежее упаковываем перед отправкой</small></div>
+        <div class="size-grid" role="group" aria-label="Выбор фасовки">
+          <button class="size-card is-selected" data-size="100" aria-pressed="true"><span class="size-weight">100 г</span><span class="size-hint">Попробовать</span><span class="size-check">✓</span></button>
+          <button class="size-card" data-size="500" aria-pressed="false"><span class="size-weight">500 г</span><span class="size-hint">На каждый день</span><span class="size-check">✓</span></button>
+          <button class="size-card" data-size="1000" aria-pressed="false"><span class="size-weight">1 кг</span><span class="size-hint">Выгодный запас</span><span class="size-check">✓</span></button>
+          <button class="size-card" data-size="5000" aria-pressed="false"><span class="size-weight">5 кг</span><span class="size-hint">Для ценителей</span><span class="size-check">✓</span></button>
+        </div>
+        <div class="price-row">
+          <div><div class="price-main"><strong id="currentPrice">326,40 ₽</strong><span class="discount" id="discount">−7%</span></div><div class="price-sub"><s id="oldPrice">349,20 ₽</s><span>Цена со скидкой</span></div></div>
+          <div class="sku">АРТИКУЛ<strong id="article">01306</strong></div>
+        </div>
+        <div class="buy-row" id="buy"><div class="quantity-control" aria-label="Количество"><button id="minus" aria-label="Уменьшить количество">−</button><output id="quantity" aria-live="polite">1</output><button id="plus" aria-label="Увеличить количество">+</button></div><button class="add-to-cart" id="addToCart"><span>Добавить в корзину</span><span class="add-arrow">↗</span></button></div>
+        <p class="feedback" id="cartFeedback" aria-live="polite"></p>
+        <div class="trust-row"><span><i>✓</i> Бережная упаковка</span><span><i>✓</i> Свежий чай</span></div>
+        <div class="micro-description" id="story"><h2>Чай с настроением лета</h2><p>Светлый улун из Фуцзяни и яркая нота спелого ананаса создают мягкий, освежающий вкус. В сухом виде — аккуратно скрученный лист, в чашке — прозрачный светло-янтарный настой.</p></div>
+      </div>
+    </section>
+
+    <section class="tea-details" id="brew">
+      <div class="details-intro"><span class="eyebrow">ВАШ ИДЕАЛЬНЫЙ ЧАЙ</span><h2>Просто заварите<br><em>и наслаждайтесь</em></h2><p>Ничего сложного — только вода нужной температуры и пара спокойных минут.</p></div>
+      <div class="brew-card"><span class="brew-icon">◷</span><span class="brew-label">ВРЕМЯ</span><strong>1–3 мин</strong><small>Дайте листьям раскрыться</small></div>
+      <div class="brew-card"><span class="brew-icon">♨</span><span class="brew-label">ТЕМПЕРАТУРА</span><strong>80–85 °C</strong><small>Не используйте кипяток</small></div>
+      <div class="brew-card"><span class="brew-icon">◉</span><span class="brew-label">КОЛИЧЕСТВО</span><strong>2 ч. л.</strong><small>На 500 мл воды</small></div>
+    </section>
+    <section class="review-strip" id="reviews"><div><span class="review-stars">★★★★★</span><h2>Любимый вкус начинается с первой чашки</h2><p>Попробуйте ананасовый улун и найдите свой маленький чайный ритуал.</p></div><a href="#product">Выбрать фасовку <span>↗</span></a></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#"><span class="brand-symbol">t<span>✳</span></span><span class="brand-word">tea<span>boom</span></span></a><p>Время для себя. Время для чая.</p><small>Демонстрационный проект · HTML, CSS, JavaScript</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
